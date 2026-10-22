@@ -1,0 +1,12 @@
+[package]
+name = "rusty_pixels"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+minifb = "0.29.0"
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+
+[profile.dev]
+opt-level = 1   # simulation games crawl in unoptimized debug builds
